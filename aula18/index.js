@@ -21,3 +21,7 @@ const pessoa1 = {
         this.idade++; 
     }
 }
+
+pessoa1.fala()
+pessoa1.IncrementaIdade()
+pessoa1.fala()
