@@ -1,39 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<section class="container">
+    <h1>Calculadora de IMC</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pessoas</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <table>
+        <tr>
+            <th>IMC</th>
+            <th>Resultado</th>
+        </tr>
 
-<body>
+        <tr>
+            <td>Menos do que 18,5</td>
+            <td>Abaixo do peso</td>
+        </tr>
 
-    <section class="container">
-        <h1>Cadastro de Pessoas</h1>
+        <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Peso normal</td>
+        </tr>
 
-        <form class="form">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" class="nome" placeholder="Digite seu nome">
+        <tr>
+            <td>Entre 25 e 29,9</td>
+            <td>Sobrepeso</td>
+        </tr>
 
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" class="sobrenome" placeholder="Digite seu sobrenome">
+        <tr>
+            <td>Entre 30 e 34,9</td>
+            <td>Obesidade grau 1</td>
+        </tr>
 
-            <label for="peso">Peso</label>
-            <input type="number" id="peso" class="peso" placeholder="Digite seu peso">
+        <tr>
+            <td>Entre 35 e 39,9</td>
+            <td>Obesidade grau 2</td>
+        </tr>
 
-            <label for="altura">Altura</label>
-            <input type="number" step="0.01" id="altura" class="altura" placeholder="Digite sua altura">
+        <tr>
+            <td>Mais do que 40</td>
+            <td>Obesidade grau 3</td>
+        </tr>
+    </table>
 
-            <button type="submit">Enviar</button>
-        </form>
+    <form class="form">
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" class="peso" placeholder="Digite seu peso">
 
-        <div class="resultado"></div>
-    </section>
+        <label for="altura">Altura</label>
+        <input type="number" step="0.01" id="altura" class="altura" placeholder="Digite sua altura">
 
-    <script src="./assets/js/main.js"></script>
+        <button type="submit">Calcular</button>
+    </form>
 
-</body>
-
-</html>
+    <div class="resultado"></div>
+</section>
