@@ -2,26 +2,38 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
-  </section>
+    <section class="container">
+        <h1>Cadastro de Pessoas</h1>
 
-  <script src="./assets/js/main.js"></script>
+        <form class="form">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="nome" placeholder="Digite seu nome">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" class="sobrenome" placeholder="Digite seu sobrenome">
+
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" class="peso" placeholder="Digite seu peso">
+
+            <label for="altura">Altura</label>
+            <input type="number" step="0.01" id="altura" class="altura" placeholder="Digite sua altura">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="resultado"></div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
