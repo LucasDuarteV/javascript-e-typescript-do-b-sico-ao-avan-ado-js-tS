@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--primary-color-darker)
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+
+    animation: aparecer 0.6s ease;
+}
+
+.container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    margin-bottom: 35px;
+}
+
+#frases {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#frases p {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--primary-color-darker)
+    );
+
+    color: white;
+
+    padding: 18px 25px;
+
+    border-radius: 12px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+#frases p:hover {
+    transform: translateX(10px) scale(1.02);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
