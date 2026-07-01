@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-darker));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.container h1 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+/* FRASES */
+#frases {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#frases p {
+    background: #f3f3f3;
+    padding: 14px;
+    border-radius: 10px;
+    color: var(--primary-color-darker);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#frases p:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateX(5px);
+}
