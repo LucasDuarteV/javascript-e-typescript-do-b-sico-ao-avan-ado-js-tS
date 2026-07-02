@@ -67,14 +67,26 @@ body {
     color: white;
 }
 
+.btn-clear:hover {
+    background: #ff5252;
+}
+
 .btn-del {
     background: #ffa94d;
     color: white;
 }
 
+.btn-del:hover {
+    background: #ff922b;
+}
+
 .btn-eq {
     background: var(--primary-color);
     color: white;
+}
+
+.btn-eq:hover {
+    background: var(--primary-color-darker);
 }
 
 td {
