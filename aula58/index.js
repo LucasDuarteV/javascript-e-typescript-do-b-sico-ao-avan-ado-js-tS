@@ -3,7 +3,7 @@ function Pessoa(nome , sobrenome){
     const id = 123456
 
     const metodoInterno = function(){
-        
+
     }
 
     this.nome = nome
