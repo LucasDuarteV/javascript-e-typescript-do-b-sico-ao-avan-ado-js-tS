@@ -113,3 +113,10 @@ body {
         height: 44px;
     }
 }
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}

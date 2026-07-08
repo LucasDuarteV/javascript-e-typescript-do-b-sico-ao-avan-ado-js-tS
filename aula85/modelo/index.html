@@ -24,29 +24,62 @@
         <form action="/" method="POST" class="formulario">
 
             <label for="nome">Nome</label>
-            <input type="text" id="nome" class="nome" required>
+            <input
+                type="text"
+                id="nome"
+                class="validar nome"
+                required
+            >
 
             <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" class="sobrenome" required>
+            <input
+                type="text"
+                id="sobrenome"
+                class="validar sobrenome"
+                required
+            >
 
             <label for="cpf">CPF</label>
-            <input type="text" id="cpf" class="cpf" required>
+            <input
+                type="text"
+                id="cpf"
+                class="validar cpf"
+                required
+            >
 
             <label for="usuario">Usuário</label>
-            <input type="text" id="usuario" class="usuario" required>
+            <input
+                type="text"
+                id="usuario"
+                class="validar usuario"
+                required
+            >
 
             <label for="senha">Senha</label>
-            <input type="password" id="senha" class="senha" required>
+            <input
+                type="password"
+                id="senha"
+                class="validar senha"
+                required
+            >
 
             <label for="repetir-senha">Repetir Senha</label>
-            <input type="password" id="repetir-senha" class="repetir-senha" required>
+            <input
+                type="password"
+                id="repetir-senha"
+                class="validar repetir-senha"
+                required
+            >
 
             <button type="submit">Enviar</button>
 
         </form>
-
     </section>
 
+    <!-- Primeiro a classe ValidaCPF -->
+    <script src="./assets/js/ValidaCPF.js"></script>
+
+    <!-- Depois o main.js -->
     <script src="./assets/js/main.js"></script>
 
 </body>
